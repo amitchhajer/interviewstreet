@@ -1,0 +1,12 @@
+ssh -i id_DevKeyForHuanInstance cloudmapreduce@paste public dns here 
+
+cd Workspace/
+cd cloudmapreduce
+ls
+
+scp -i id_DevKeyForHuanInstance cloudmapreduce-api-0.8-development.jar cloudmapreduce@ec2-23-20-243-155.compute-1.amazonaws.com:~
+
+scp -i id_DevKeyForHuanInstance cloudmapreduce-examples-0.8-development.jar  cloudmapreduce@ec2-23-20-243-155.compute-1.amazonaws.com:~
+
+scp -i id_DevKeyForHuanInstance myRun.sh  cloudmapreduce@ec2-23-20-243-155.compute-1.amazonaws.com:~
+
